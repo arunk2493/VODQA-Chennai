@@ -3873,6 +3873,10 @@ button, .button {
         background-color: #007740; }
       #intro .actions a h4:hover, #intro .actions a h4:focus {
         color: white; }
+      #intro .actions a h4 span {
+        font-size: 18px;
+        font-weight: 600;
+        display: block; }
     @media only screen and (max-width: 768px) {
       #intro .actions a {
         padding: 0.25em; } }
