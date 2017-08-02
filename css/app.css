@@ -3886,7 +3886,8 @@ button, .button {
 
 #agenda {
   color: #222222;
-  background: #00aa5b url(../img/white-bg.png); }
+  background: #00aa5b url(../img/white-bg.png);
+  background: #83ba81; }
   #agenda h1, #agenda h2, #agenda h3, #agenda #archive .grid a .day, #archive .grid a #agenda .day, #agenda h4, #agenda h5, #agenda h6, #agenda #archive .grid a .month, #archive .grid a #agenda .month, #agenda .subheader, #agenda p, #agenda blockquote, #agenda small, #agenda #archive .grid a .year, #archive .grid a #agenda .year {
     color: #222222; }
   #agenda a {
@@ -3959,6 +3960,50 @@ button, .button {
     #agenda .timings .row:hover {
       background-color: #00dd76; }
 
+#faq {
+  background: #f3f3f3;
+  margin-bottom: 1.4rem;
+  padding: 2rem 6rem; }
+  #faq .description {
+    border: 1px dashed #b1b0b0;
+    border-top: 0;
+    padding: 10px 20px;
+    line-height: 1.6rem; }
+  #faq .faq {
+    margin-bottom: 1.4rem;
+    font-size: 0.75em; }
+  #faq .open,
+  #faq .close {
+    display: block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle; }
+  #faq .hide {
+    display: none; }
+  #faq .question {
+    padding: 10px 20px;
+    border: 1px solid #bbbbbb;
+    background: white;
+    cursor: pointer;
+    vertical-align: middle; }
+  #faq .question.active {
+    background: #83ba81;
+    color: white;
+    border-color: transparent; }
+  #faq .open {
+    color: #bbbbbb; }
+  #faq .close {
+    color: white; }
+  #faq .question .open,
+  #faq .question .close {
+    float: right;
+    background: none;
+    border: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer; }
+
 #speakers {
   padding: 0.5em; }
   #speakers .speaker-name {
@@ -3981,30 +4026,38 @@ button, .button {
     display: inline-block;
     float: left; }
 
-#location {
-  color: white;
-  background: #222222 url(../img/white-bg.png);
-  background-image: url(../img/dark-bg.jpg); }
-  #location h1, #location h2, #location h3, #location #archive .grid a .day, #archive .grid a #location .day, #location h4, #location h5, #location h6, #location #archive .grid a .month, #archive .grid a #location .month, #location .subheader, #location p, #location blockquote, #location small, #location #archive .grid a .year, #archive .grid a #location .year {
-    color: white; }
-  #location a {
-    color: white; }
-    #location a:hover, #location a:active {
-      color: #bcbcbc; }
-  #location code, #location abbr, #location acronym {
-    color: #d9d9d9; }
-  #location .row {
-    overflow: hidden; }
-  #location .address span {
-    display: block;
-    padding-bottom: 0.5em; }
-  #location .address a {
-    color: #00aa5b; }
-  @media only screen and (min-width: 768px) {
-    #location .address p {
-      text-align: right; }
-    #location img {
-      border-radius: 0 0.5em 0.5em 0; } }
+#location .row {
+  overflow: hidden; }
+#location .address span {
+  display: block;
+  padding-bottom: 0.5em; }
+#location .address a {
+  color: #00aa5b; }
+@media only screen and (min-width: 768px) {
+  #location .address p {
+    text-align: right; }
+  #location img {
+    border-radius: 0 0.5em 0.5em 0; } }
+#location .live-map {
+  height: 400px;
+  width: 100%;
+  border: 0;
+  padding: 0; }
+#location .map-address {
+  position: absolute;
+  top: 0;
+  height: 280px;
+  width: 380px;
+  font-size: 15px;
+  line-height: 35px;
+  padding: 20px;
+  margin: 40px 10px;
+  background-color: white;
+  box-shadow: 17px 19px 20px 0px black; }
+
+.map-address-heading {
+  color: #00aa5b;
+  text-align: center; }
 
 #about {
   color: white;
@@ -4071,7 +4124,10 @@ button, .button {
 
 #archive {
   color: #222222;
-  background: white url(../img/white-bg.png); }
+  background: white url(../img/white-bg.png);
+  border-radius: 0;
+  background: url("../img/flashback.png");
+  background-size: cover; }
   #archive h1, #archive h2, #archive h3, #archive .grid a .day, #archive h4, #archive h5, #archive h6, #archive .grid a .month, #archive .subheader, #archive p, #archive blockquote, #archive small, #archive .grid a .year {
     color: #222222; }
   #archive a {
@@ -4080,7 +4136,13 @@ button, .button {
       color: #4cc38c; }
   #archive code, #archive abbr, #archive acronym {
     color: black; }
+  #archive .edition {
+    text-align: center; }
+  #archive .edition_text {
+    color: white;
+    background-color: rgba(34, 34, 34, 0.5); }
   #archive .grid {
+    color: #00aa5b;
     list-style-type: none;
     margin: 0;
     padding: 0;
