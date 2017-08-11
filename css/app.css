@@ -3962,13 +3962,15 @@ button, .button {
 
 #faq {
   background: #f3f3f3;
-  margin-bottom: 1.4rem;
-  padding: 2rem 6rem; }
+  padding: 2rem 6rem;
+  background-image: url(../img/dark-bg.jpg); }
   #faq .description {
     border: 1px dashed #b1b0b0;
     border-top: 0;
     padding: 10px 20px;
-    line-height: 1.6rem; }
+    line-height: 1.6rem;
+    color: white;
+    display: none; }
   #faq .faq {
     margin-bottom: 1.4rem;
     font-size: 0.75em; }
@@ -3979,26 +3981,25 @@ button, .button {
     width: 20px;
     text-align: center;
     vertical-align: middle; }
-  #faq .hide {
-    display: none; }
   #faq .question {
     padding: 10px 20px;
     border: 1px solid #bbbbbb;
-    background: white;
+    background: #f3f3f3;
+    color: #00aa5b;
     cursor: pointer;
     vertical-align: middle; }
   #faq .question.active {
-    background: #83ba81;
-    color: white;
+    color: #00aa5b;
     border-color: transparent; }
   #faq .open {
-    color: #bbbbbb; }
+    color: #0c0c0c; }
   #faq .close {
-    color: white; }
+    color: #0c0c0c; }
   #faq .question .open,
   #faq .question .close {
     float: right;
     background: none;
+    color: #00aa5b;
     border: 0;
     font-size: 1rem;
     font-weight: bold;
